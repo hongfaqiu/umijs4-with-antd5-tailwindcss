@@ -1,6 +1,6 @@
 {
+	"name": "umi4-with-antd5-tailwind",
 	"private": true,
-	"author": "hongfaqiu <951142905@qq.com>",
 	"scripts": {
 		"dev": "umi dev",
 		"build": "umi build",

@@ -20,7 +20,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
 	const [visible, toggleVisible] = useToggle(false);
 
 	return (
-		<AntdTooltip visible={visible} title={content} placement={placement}>
+		<AntdTooltip open={visible} title={content} placement={placement}>
 			<span
 				onMouseEnter={() => {
 					toggleVisible(true);

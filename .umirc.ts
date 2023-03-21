@@ -23,7 +23,7 @@ export default defineConfig({
 	sassLoader: {},
 	exportStatic: {},
 	favicons: ['/logo.png'],
-	title: 'WorkFlow',
+	title: 'umi4-with-antd5-tailwind',
 	mfsu: {
 		shared: {
 			react: {

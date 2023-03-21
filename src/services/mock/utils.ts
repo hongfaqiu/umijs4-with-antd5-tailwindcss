@@ -1,4 +1,3 @@
-// sleep function use ts
 export function sleep(s: number) {
 	return new Promise<void>((resolve) => {
 		setTimeout(() => {
@@ -16,13 +15,13 @@ export function filterData<
 	U extends DataQueryMapping<T>,
 >(
 	data: T[],
-	params: API.QueryParams,
+	params?: API.QueryParams,
 	dataQueryMapping?: U,
 ): {
 	list: T[];
 	totalCount: number;
 } {
-	const { keyword = '', page = 1, pageSize = 10, tags } = params;
+	const { keyword = '', page = 1, pageSize = 10, tags } = params ?? {};
 	const startIndex = (page - 1 ?? 0) * (pageSize ?? 10);
 	const endIndex = startIndex + (pageSize ?? 10);
 

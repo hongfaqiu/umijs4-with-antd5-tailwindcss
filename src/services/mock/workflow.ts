@@ -7,7 +7,6 @@ import {
 	randUserName,
 	randUuid,
 } from '@ngneat/falso';
-import { defineMock } from 'umi';
 
 import { filterData, getRandomSubarray, sleep } from './utils';
 
@@ -67,26 +66,23 @@ for (let i = 0; i < 100; i += 1) {
 	data.push(generateWorkflow());
 }
 
-export default defineMock({
-	'POST /api/getTemplates': async (_req, res) => {
-		const { body } = _req;
+export async function mockGetTemplates(body?: API.QueryParams) {
+	await sleep(Math.random() * 1);
 
-		await sleep(Math.random() * 1);
+	return {
+		message: 'success',
+		data: filterData(data, body),
+		code: 200,
+	};
+}
 
-		res.json({
-			message: 'success',
-			data: filterData(data, body),
-			code: 200,
-		});
-	},
-	'GET /api/getCategories': async (_req, res) => {
-		res.json({
-			message: 'success',
-			data: {
-				list: modelCategories,
-				totalCount: modelCategories.length,
-			},
-			code: 200,
-		});
-	},
-});
+export function mockGetCategories() {
+	return {
+		message: 'success',
+		data: {
+			list: modelCategories,
+			totalCount: modelCategories.length,
+		},
+		code: 200,
+	};
+}
