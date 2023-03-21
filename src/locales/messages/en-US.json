@@ -3,7 +3,8 @@
 		"title": "umi4-with-antd5-tailwind"
 	},
 	"header": {
-		"gohome": "go home"
+		"gohome": "go home",
+		"star": "You can order a star if you like"
 	},
 	"theme": {
 		"light": "light",

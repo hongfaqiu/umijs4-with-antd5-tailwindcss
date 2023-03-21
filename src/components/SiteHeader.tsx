@@ -7,6 +7,7 @@ import Icons from './Icons';
 import { LangSwitcher } from './LangSwitcher';
 import SearchBar from './SearchBar';
 import ThemeToggle from './ThemeToggle';
+import { Tooltip } from './Tooltip';
 
 export function SiteHeader() {
 	const t = useT('header');
@@ -34,6 +35,16 @@ export function SiteHeader() {
 				</div>
 				<div className="flex flex-1 items-center justify-end space-x-4">
 					<nav className="flex items-center space-x-1">
+						<Link
+							to={'https://github.com/hongfaqiu/umijs4-with-antd5-tailwindcss'}
+							target="_blank"
+							rel="noreferrer"
+							className="btn"
+						>
+							<Tooltip content={t('star')}>
+								<Icons.Github className="h-5 w-5" />
+							</Tooltip>
+						</Link>
 						<LangSwitcher globalIconClassName="btn" />
 						<ThemeToggle />
 					</nav>

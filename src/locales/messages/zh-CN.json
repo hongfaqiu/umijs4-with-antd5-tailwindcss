@@ -3,7 +3,8 @@
 		"title": "umi4和antd5-tailwind"
 	},
 	"header": {
-		"gohome": "回到首页"
+		"gohome": "回到首页",
+		"star": "如果喜欢的话可以点个星星"
 	},
 	"theme": {
 		"light": "亮色",
