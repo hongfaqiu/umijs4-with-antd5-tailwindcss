@@ -1,0 +1,17 @@
+{
+  "*.{md,json}": [
+    "prettier --cache --write"
+  ],
+  "*.{js,jsx}": [
+    "umi lint --fix --eslint-only",
+    "prettier --cache --write"
+  ],
+  "*.scss": [
+    "umi lint --fix --stylelint-only",
+    "prettier --cache --write"
+  ],
+  "*.ts?(x)": [
+    "umi lint --fix --eslint-only",
+    "prettier --cache --parser=typescript --write"
+  ]
+}

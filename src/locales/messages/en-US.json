@@ -1,0 +1,51 @@
+{
+	"site": {
+		"title": "WorkFlow"
+	},
+	"header": {
+		"gohome": "go home"
+	},
+	"theme": {
+		"light": "light",
+		"dark": "dark",
+		"system": "system"
+	},
+	"menu": {
+		"recent": "Recent",
+		"likes": "Likes",
+		"templates": "Templates",
+		"discover": "Discover"
+	},
+	"tips": {
+		"deleteTitle": "Are you sure to delete?",
+		"deleteContent": "It cannot be recovered after deletion, please confirm whether you want to delete"
+	},
+	"search": "Search",
+	"start": {
+		"new": "Create new workflow",
+		"fromTemplate": "New from a template"
+	},
+	"dashborad": {
+		"recent": {
+			"title": "Recent",
+			"tip": "Pick up where you left off"
+		},
+		"likes": {
+			"title": "Liked workflows",
+			"tip": "Share your appreciation for your favorites and they will appear here."
+		},
+		"discover": {
+			"title": "Discover official or public workflows"
+		},
+		"dropdown": {
+			"rename": "Rename",
+			"delete": "Delete",
+			"fork": "Fork"
+		}
+	},
+	"list": {
+		"total": "{num} results found",
+		"end": "Yay! You have seen it all"
+	},
+	"backTop": "Back to top"
+}

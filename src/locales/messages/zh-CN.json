@@ -1,0 +1,51 @@
+{
+	"site": {
+		"title": "工作流"
+	},
+	"header": {
+		"gohome": "回到首页"
+	},
+	"theme": {
+		"light": "亮色",
+		"dark": "暗色",
+		"system": "系统"
+	},
+	"menu": {
+		"recent": "最近",
+		"likes": "收藏",
+		"templates": "模板",
+		"discover": "发现"
+	},
+	"tips": {
+		"deleteTitle": "你确定删除吗？",
+		"deleteContent": "删除后无法恢复，请确认是否要删除"
+	},
+	"search": "搜索",
+	"start": {
+		"new": "创建新工作流",
+		"fromTemplate": "从模板创建"
+	},
+	"dashborad": {
+		"recent": {
+			"title": "最近的",
+			"tip": "上一次编排的工作流"
+		},
+		"likes": {
+			"title": "收藏的工作流",
+			"tip": "您收藏的工作流将会出现在此处。"
+		},
+		"discover": {
+			"title": "发现官方或公开的工作流"
+		},
+		"dropdown": {
+			"rename": "重命名",
+			"delete": "删除",
+			"fork": "复用"
+		}
+	},
+	"list": {
+		"total": "找到了 {num} 条记录",
+		"end": "没有更多啦"
+	},
+	"backTop": "回到顶部"
+}

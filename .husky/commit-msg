@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+  
+# Export Git hook params
+export GIT_PARAMS=$*
+
+npm run lint-commit

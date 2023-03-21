@@ -1,0 +1,1 @@
+import 'umi/test-setup';
